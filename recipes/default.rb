@@ -34,6 +34,11 @@ file "#{node[:tripwire][:configdir]}/tw.pol" do
   action :delete
 end
 
+execute "modify config" do
+  cwd node[:tripwire][:configdir]
+  command "sed -i -e '/MAILNOVIOLATIONS/s/true/false/' twcfg.txt"
+end
+
 execute "sign config" do
   cwd node[:tripwire][:configdir]
   command "twadmin --create-cfgfile -c tw.cfg -Q #{node[:tripwire][:sitepass]} -S site.key twcfg.txt"

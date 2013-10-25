@@ -9,10 +9,6 @@
 
 rightscale_marker :begin
 
-execute "tripwire_check" do
-  command "tripwire --check"
-end
-
 tripwire_cron 'tripwire' do
   enable true
 end

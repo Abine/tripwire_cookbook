@@ -11,7 +11,7 @@ define :tripwire_cron, :enable => true do
   if params[:enable]
     cron "tripwire_check" do
       minute "*/10"
-      command "/opt/tripwire/sbin/tripwire --check --email-report --quiet"
+      command "tripwire --check --email-report --quiet"
     end
   else
     cron "tripwire_check" do

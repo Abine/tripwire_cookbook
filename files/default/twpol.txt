@@ -312,13 +312,12 @@ EMAIL         = mm-auto@getabine.com;
 	emailto = $(EMAIL)
 )
 {
-		/home/webapps/app 		-> $(SEC_CRIT) ;
-		/home/webapps/config	-> $(SEC_CRIT) ;
-		/home/webapps/db 		-> $(SEC_CRIT) ;
-		/home/webapps/features	-> $(SEC_CRIT) ;
-		/home/webapps/lib 		-> $(SEC_CRIT) ;
-		/home/webapps/public 	-> $(SEC_CRIT) ;
-		/home/webapps/script 	-> $(SEC_CRIT) ;
-		/home/webapps/spec 		-> $(SEC_CRIT) ;
-		/home/webapps/vendor 	-> $(SEC_CRIT) ;
+		/home/webapps/myapp/app 		-> $(SEC_CRIT) ;
+		/home/webapps/myapp/config	-> $(SEC_CRIT) ;
+		/home/webapps/myapp/db 		-> $(SEC_CRIT) ;
+		/home/webapps/myapp/lib 		-> $(SEC_CRIT) ;
+		/home/webapps/myapp/public 	-> $(SEC_CRIT) ;
+		/home/webapps/myapp/script 	-> $(SEC_CRIT) ;
+		/home/webapps/myapp/spec 		-> $(SEC_CRIT) ;
+		/home/webapps/myapp/vendor 	-> $(SEC_CRIT) ;
 }
